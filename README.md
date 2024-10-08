@@ -36,20 +36,20 @@ import numpy as np
 df=pd.read_csv("/content/bmi.csv")
 df.head()
 ```
-<img width="216" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/2aea6717-ef53-42bb-b94c-5228a301c51b">
+<img width="300" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/2aea6717-ef53-42bb-b94c-5228a301c51b">
 
 ```
 df.dropna()
 ```
 
-<img width="214" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/8b146d52-1bff-4afe-95ad-1fd1b34c1890">
+<img width="300" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/8b146d52-1bff-4afe-95ad-1fd1b34c1890">
 
 ```
 max_vals=np.max(np.abs(df[['Height','Weight']]))
 max_vals
 
 ```
-<img width="46" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/76a9d44b-b7de-43b0-b4c5-4fa2369743cd">
+<img width="100" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/76a9d44b-b7de-43b0-b4c5-4fa2369743cd">
 
 ```
 from sklearn.preprocessing import StandardScaler
@@ -58,7 +58,7 @@ df[['Height','Weight']]=sc.fit_transform(df[['Height','Weight']])
 df.head(10)
 ```
 
-<img width="204" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/c1e1b5ab-3592-4f38-9696-9e394eb38a08">
+<img width="300" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/c1e1b5ab-3592-4f38-9696-9e394eb38a08">
 
 ```
 from sklearn.preprocessing import MinMaxScaler
@@ -67,7 +67,7 @@ df[['Height','Weight']]=scaler.fit_transform(df[['Height','Weight']])
 df.head(10)
 ```
 
-<img width="196" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/cc1b1e0b-0a00-455f-b3aa-2820d2eaea4c">
+<img width="300" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/cc1b1e0b-0a00-455f-b3aa-2820d2eaea4c">
 
 ```
 from sklearn.preprocessing import Normalizer
@@ -76,7 +76,7 @@ df[['Height','Weight']]=scaler.fit_transform(df[['Height','Weight']])
 df
 ```
 
-<img width="214" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/d55c9d08-42a1-4106-9fb0-dad172a28cfd">
+<img width="300" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/d55c9d08-42a1-4106-9fb0-dad172a28cfd">
 
 ```
 df1=pd.read_csv("/content/bmi.csv")
@@ -86,7 +86,7 @@ df1[['Height','Weight']]=scaler.fit_transform(df1[['Height','Weight']])
 df1
 
 ```
-<img width="210" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/1a21a595-3a30-43de-9dd9-abc59ff86dd8">
+<img width="300" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/1a21a595-3a30-43de-9dd9-abc59ff86dd8">
 
 ```
 df2=pd.read_csv("/content/bmi.csv")
@@ -96,7 +96,7 @@ df2[['Height','Weight']]=scaler.fit_transform(df2[['Height','Weight']])
 df2.head()
 ```
 
-<img width="203" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/df58bc4e-e7c9-49d4-ba54-c61123297ee1">
+<img width="300" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/df58bc4e-e7c9-49d4-ba54-c61123297ee1">
 
 ```
 
@@ -116,7 +116,7 @@ data
 data.isnull().sum()
 ```
 
-<img width="119" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/9a0b6c2c-4c0c-46b9-91ad-475f04ce3562">
+<img width="300" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/9a0b6c2c-4c0c-46b9-91ad-475f04ce3562">
 
 ```
 missing=data[data.isnull().any(axis=1)]
@@ -147,7 +147,7 @@ dfs=pd.concat([sal,sal2],axis=1)
 dfs
 ```
 
-<img width="204" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/a2ce5564-7e32-481d-9547-e5943afb5c15">
+<img width="300" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/a2ce5564-7e32-481d-9547-e5943afb5c15">
 
 ```
 data2
@@ -195,7 +195,7 @@ KNN_classifier=KNeighborsClassifier(n_neighbors = 5)
 KNN_classifier.fit(train_x,train_y)
 ```
 
-<img width="140" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/4c854a00-85d9-4d76-b57e-292d13ba84ee">
+<img width="300" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/4c854a00-85d9-4d76-b57e-292d13ba84ee">
 
 ```
 prediction = KNN_classifier.predict(test_x)
@@ -203,7 +203,7 @@ confusionMmatrix = confusion_matrix(test_y, prediction)
 print(confusionMmatrix)
 
 ```
-<img width="55" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/2aae088f-279f-4f33-8137-b712dc580d9e">
+<img width="300" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/2aae088f-279f-4f33-8137-b712dc580d9e">
 
 ```
 accuracy_score=accuracy_score(test_y, prediction)
@@ -235,14 +235,14 @@ tips=sns.load_dataset('tips')
 tips.head()
 
 ```
-<img width="257" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/ee1738f1-e407-493b-a162-dc1ef444d0e4">
+<img width="300" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/ee1738f1-e407-493b-a162-dc1ef444d0e4">
 
 ```
 contingency_table=pd.crosstab(tips['sex'],tips['time'])
 print(contingency_table)
 
 ```
-<img width="139" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/51bcc338-6dad-4de6-92c9-bfbbcfaafeb0">
+<img width="300" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/51bcc338-6dad-4de6-92c9-bfbbcfaafeb0">
 
 ```
 chi2, p, _, _ = chi2_contingency(contingency_table)
@@ -250,7 +250,7 @@ print(f"Chi-Square Statistic: {chi2}")
 print(f"P-value: {p}")
 
 ```
-<img width="206" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/72746275-4a20-4305-9e80-3bbf1ed0a806">
+<img width="300" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/72746275-4a20-4305-9e80-3bbf1ed0a806">
 
 ```
 import pandas as pd
