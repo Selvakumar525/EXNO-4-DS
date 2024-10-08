@@ -272,7 +272,7 @@ print("Selected Features:")
 print(selected_features)
 
 ```
-<img width="194" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/66eac5dc-973c-4cee-833a-21a3ceb5fc61">
+<img width="300" alt="image" src="https://github.com/KayyuruTharani/EXNO-4-DS/assets/142209319/66eac5dc-973c-4cee-833a-21a3ceb5fc61">
 
 
 
